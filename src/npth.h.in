@@ -334,8 +334,6 @@ unsigned int npth_sleep(unsigned int sec);
 
 pid_t npth_waitpid(pid_t pid, int *status, int options);
 int npth_system(const char *cmd);
-#define npth_sigmask pthread_sigmask
-int npth_sigwait(const sigset_t *set, int *sig);
 
 int npth_connect(int s, const struct sockaddr *addr, _npth_socklen_t addrlen);
 int npth_accept(int s, struct sockaddr *addr, _npth_socklen_t *addrlen);

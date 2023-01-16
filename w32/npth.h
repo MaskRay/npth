@@ -145,12 +145,6 @@ unsigned int npth_sleep(unsigned int sec);
 pid_t npth_waitpid(pid_t pid, int *status, int options);
 int npth_system(const char *cmd);
 
-#if 0
-/* We do not support this on windows.  */
-int npth_sigmask(int how, const sigset_t *set, sigset_t *oldset);
-int npth_sigwait(const sigset_t *set, int *sig);
-#endif
-
 int npth_connect(int s, const struct sockaddr *addr, socklen_t addrlen);
 int npth_accept(int s, struct sockaddr *addr, socklen_t *addrlen);
 /* Only good for sockets!  */
